@@ -1596,6 +1596,7 @@ class XiaoshiHaInfoButton extends LitElement {
       const popupStyle = this.config.popup_style || `
         --mdc-theme-surface: rgb(0,0,0,0); 
         --dialog-backdrop-filter: blur(10px) brightness(1);
+        --ha-dialog-scrim-backdrop-filter: blur(10px) brightness(1);
       `;
       
       if (window.browser_mod) {
