@@ -1456,12 +1456,7 @@ class XiaoshiConsumablesButton extends LitElement {
 
   _handleClick(){
     if (navigator.vibrate) {
-      navigator.vibrate(50);
-    }
-    else if (navigator.webkitVibrate) {
-        navigator.webkitVibrate(50); 
-    }
-    else {
+      navigator.vibrate(20);
     }
   }
 
