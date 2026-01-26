@@ -1007,9 +1007,13 @@ class XiaoshiBalanceCard extends LitElement {
   }
 
   _handleClick(){
-    if (navigator.vibrate) {
-      navigator.vibrate(20);
-    }
+    const hapticEvent = new Event('haptic', {
+      bubbles: true,
+      cancelable: false,
+      composed: true
+    });
+    hapticEvent.detail = 'light';
+    this.dispatchEvent(hapticEvent);
   }
 
   _evaluateWarningCondition(value, condition) {
