@@ -1,4 +1,4 @@
-console.info("%c 消逝卡-通用卡 \n%c      v 1.0.1 ", "color: red; font-weight: bold; background: black", "color: white; font-weight: bold; background: black");
+console.info("%c 消逝卡-通用卡 \n%c      v 1.0.2 ", "color: red; font-weight: bold; background: black", "color: white; font-weight: bold; background: black");
 
 const loadCards = () => {
     import('./xiaoshi-device-balance-button.js');
