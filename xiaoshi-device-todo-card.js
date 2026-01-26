@@ -956,9 +956,13 @@ class XiaoshiTodoCard extends LitElement {
   }
 
   _handleClick(){
-    if (navigator.vibrate) {
-      navigator.vibrate(20);
-    }
+    const hapticEvent = new Event('haptic', {
+      bubbles: true,
+      cancelable: false,
+      composed: true
+    });
+    hapticEvent.detail = 'light';
+    this.dispatchEvent(hapticEvent);
   }
 
   async _addTodoItem(entityId, item, description = '', due = '') {
