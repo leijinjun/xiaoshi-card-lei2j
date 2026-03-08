@@ -10,6 +10,7 @@ const loadCards = () => {
     import('./xiaoshi-device-todo-card.js');
     import('./xiaoshi-device-consumables-card.js');
     import('./xiaoshi-image-card.js');
+    import('./xiaoshi-light-card.js');
     
     window.customCards = window.customCards || [];
     window.customCards.push(...cardConfigs);
@@ -68,6 +69,12 @@ const cardConfigs = [
     type: 'xiaoshi-image-card',
     name: '消逝图片卡片',
     description: '消逝图片卡片',
+    preview: true
+  },
+  {
+    type: 'xiaoshi-light-card',
+    name: '消逝灯光卡片',
+    description: '消逝灯光卡片',
     preview: true
   }
 ];
