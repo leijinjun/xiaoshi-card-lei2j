@@ -619,4 +619,4 @@ export class XiaoshiPhonelightCard extends LitElement {
     }
   }
 }
-customElements.define('xiaoshi-phone-light-card', XiaoshiPhonelightCard);
+customElements.define('xiaoshi-light-card', XiaoshiPhonelightCard);
